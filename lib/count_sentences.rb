@@ -1,6 +1,6 @@
 require 'pry'
 
-class String
+class String 
 
   def sentence?
     if self.end_with?(".")
@@ -27,11 +27,6 @@ class String
   end
 
   def count_sentences
-    #edge case 
-    # if self.count_sentences == 0 
-    #   return 0 
-    # end #end of if 
-
-  end
-
+    self.split(/[\.?!]+/).count 
+  end 
 end
